@@ -14,7 +14,7 @@ app.use(cors({
 
 const mongodb = require("mongodb")
 const mongoClient = mongodb.MongoClient;
-const url = process.env.DB || "mongodb+srv://shreyashatlas:atlas123@cluster0.xzuh7.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+const url = process.env.DB || "mongodb+srv://shreyashatlas:atlas123@cluster0.xzuh7.mongodb.net/student_mentor?retryWrites=true&w=majority"
 
 app.get("/mentor", async (req, res) => {
     try {
