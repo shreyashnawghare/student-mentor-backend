@@ -1,4 +1,4 @@
-const port = process.env.PORT || 5000
+const port = 5000
 
 const express = require("express")
 const app = express()
@@ -14,7 +14,7 @@ app.use(cors({
 
 const mongodb = require("mongodb")
 const mongoClient = mongodb.MongoClient;
-const url = process.env.DB || "mongodb://localhost:27017"
+const url = process.env.DB || "mongodb+srv://shreyashatlas:atlas123@cluster0.xzuh7.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 
 app.get("/mentor", async (req, res) => {
     try {
